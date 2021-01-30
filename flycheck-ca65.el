@@ -40,7 +40,7 @@
 See URL `https://cc65.github.io/'."
   :command ("ca65" "-o" null-device source-inplace)
   :error-patterns
-  ((error line-start (file-name) "(" line "): " (message) line-end))
+  ((error line-start (file-name) "(" line "): Error: " (message) line-end))
   :modes (ca65-mode))
 
 ;;;###autoload
