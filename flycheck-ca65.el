@@ -38,7 +38,7 @@
   "A ca65 syntax checker and validator using the ca65 compiler.
 
 See URL `https://cc65.github.io/'."
-  :command ("ca65" "-o" "/dev/null" source-inplace)
+  :command ("ca65" "-o" null-device source-inplace)
   :error-patterns
   ((error line-start (file-name) "(" line "): " (message) line-end))
   :modes (ca65-mode))
